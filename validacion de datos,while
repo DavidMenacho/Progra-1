@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+void main()
+{
+	int n,i,p=1;
+	do{
+	cout<<"ingresar n:"<<endl;
+	cin>>n;
+	}while (n<0);
+	i=1;
+	while(i<=n)
+	{
+		p=p*i;
+		i++;
+	}
+	cout<<"el resultado es: "<<p<<endl;
+	getch();
+}
