@@ -1,0 +1,55 @@
+# Progra-1// Proyecto.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+float cuadrado (float num);
+void potencia (float base,int exp,float la);
+int MCD (int num1,int num2);
+void main()
+{
+	int opcion,pot,n,m;
+	float x,lado,y,base,z;
+
+	do
+	{
+		cout<<"MENU"<<endl;
+		cout<<"1.- Area del cuadrado"<<endl;
+		cout<<"2.-Calcular la potencia"<<endl;
+		cout<<"3.-Encontrar el MCD de dos numeros"<<endl;
+		cout<<"0.-Salir"<<endl;
+		cout<<"Opcion:";
+		cin>> opcion;
+		switch(opcion)
+		{
+		case 1:
+			{
+				float x,lado;
+				cout<<"Ingrese el lado:";
+				cin>>lado;
+				x=cuadrado(lado);
+				cout<<x;break;
+			}getch();
+		case 2:
+			{
+			cout<<"Ingrese la base:";
+			cin>> base;
+			cout<<"Ingrese la potencia:";
+			cin>> pot;
+			potencia( base,pot,y);
+				cout<<"El resultado es: "<<endl<<potencia<<endl;break;
+			}
+		case 3:
+			{ int n,m;
+			cout<<"Ingrese el valor del primer numero:",cin>>n;
+			cout<<"ingrese el valor del segundo numero:",cin>>m;
+			z=MCD(n,m);
+				cout<<"El MCD es:"<<z<<endl;break;
+				getch();
+			}
+		}
+	}while(n>=0);
+}
